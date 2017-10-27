@@ -12,7 +12,8 @@
         "webpack": "^3.8.1"
     },
     "scripts": {
-        "test": "jest",
+        "test": "jest --collectCoverage false",
+        "coverage": "jest --collectCoverage true",
         "build": "webpack"
     },
     "jest": {
@@ -22,8 +23,9 @@
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
         "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
         "mapCoverage": true,
-        "collectCoverage": true,
-        "collectCoverageFrom": ["ts/**/*.ts", "!ts/**/*.d.ts"]
+        "collectCoverageFrom": ["ts/**/*.ts", "!ts/**/*.d.ts"],
+        "coverageDirectory": "<rootDir>/test/_coverageReport",
+        "coverageReporters": ["lcov", "text"]
     },
     "license": "MIT"
 }
