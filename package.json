@@ -1,0 +1,29 @@
+{
+    "name": "rmmv-ts-template",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "^21.1.5",
+        "@types/node": "^8.0.46",
+        "jest": "^21.2.1",
+        "ts-jest": "^21.1.3",
+        "ts-loader": "^3.0.5",
+        "webpack": "^3.8.1"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "webpack"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+        "mapCoverage": true,
+        "collectCoverage": true,
+        "collectCoverageFrom": ["ts/**/*.ts", "!ts/**/*.d.ts"]
+    },
+    "license": "MIT"
+}
