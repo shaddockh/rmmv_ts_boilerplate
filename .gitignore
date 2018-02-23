@@ -4,3 +4,10 @@ img/
 fonts/
 icon/
 movies/
+
+#don't check in js artifacts in the typescript directory
+ts/**/*.js
+
+#don't check in the transpiled test files
+test/**/*.js
+!test/_coverageReport
