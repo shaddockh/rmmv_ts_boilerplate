@@ -1,5 +1,14 @@
 {
     "name": "rmmv-ts-template",
+    "main": "index.html",
+    "js-flag": "--expose-gc",
+    "window": {
+        "title": "",
+        "toolbar": false,
+        "width": 816,
+        "height": 624,
+        "icon": "icon/icon.png"
+    },
     "version": "1.0.0",
     "description": "",
     "dependencies": {},
