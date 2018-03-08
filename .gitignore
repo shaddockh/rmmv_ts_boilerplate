@@ -1,9 +1,12 @@
 node_modules/
-audio/
-img/
-fonts/
-icon/
-movies/
+
+# don't commit RTP resources.  Instead, put new resources into /rtp_overrides so they get copied in
+/audio
+/fonts
+/icon
+/img
+/movies
+/system
 
 #don't check in js artifacts in the typescript directory
 ts/**/*.js
