@@ -28,8 +28,7 @@ const rmmvBuildConfig = {
         },
         { from: "**/*.png", to: path.join(__dirname, "icon"), context: "rtp_overrides/icon/" },
         { from: "**/*.png", to: path.join(__dirname, "img"), context: "rtp_overrides/img/" },
-        { from: "**/*.*", to: path.join(__dirname, "movies"), context: "rtp_overrides/movies/" },
-        { from: "**/*.png", to: path.join(__dirname, "system"), context: "rtp_overrides/system/" }
+        { from: "**/*.*", to: path.join(__dirname, "movies"), context: "rtp_overrides/movies/" }
     ]
 };
 
