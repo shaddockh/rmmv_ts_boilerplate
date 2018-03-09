@@ -1,4 +1,5 @@
 node_modules/
+dist/
 
 # don't commit RTP resources.  Instead, put new resources into /rtp_overrides so they get copied in
 /audio
