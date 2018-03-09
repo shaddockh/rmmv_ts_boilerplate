@@ -19,7 +19,7 @@
             "problemMatcher": ["$tsc-watch"]
         },
         {
-            "taskName": "runCurrentTest",
+            "label": "runCurrentTest",
             "type": "shell",
             "command": "node_modules/.bin/jest",
             "args": ["${relativeFile}"],
@@ -35,6 +35,11 @@
             "type": "npm",
             "script": "build",
             "problemMatcher": ["$tsc"]
+        },
+        {
+            "type": "npm",
+            "script": "coverage",
+            "problemMatcher": []
         }
     ]
 }

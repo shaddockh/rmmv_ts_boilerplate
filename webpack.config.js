@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const fs = require("fs");
 const rmmvBuildConfig = require("./rmmv.build.config");
 
@@ -13,6 +14,11 @@ rmmvPluginList.forEach(
 );
 
 const webpackPlugins = [new webpack.optimize.OccurrenceOrderPlugin()];
+
+if (rmmvBuildConfig.copyAdditionalResources) {
+    webpackPlugins.push(new CopyWebpackPlugin(rmmvBuildConfig.copyPatterns));
+}
+
 if (rmmvBuildConfig.identifySharedCode) {
     webpackPlugins.push(
         new webpack.optimize.CommonsChunkPlugin({
