@@ -9,11 +9,16 @@ dist/
 /movies
 /system
 
+#don't check in map files
+js/**/*.js.map
+
 #don't check in js artifacts in the typescript directory
 ts/**/*.js
+ts/**/*.js.map
 
 #don't check in the transpiled test files
 test/**/*.js
+test/**/*.js.map
 
 #don't check in the coverage report
 test/_coverageReport
