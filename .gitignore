@@ -8,6 +8,8 @@ dist/
 /img
 /movies
 /system
+/js/rpg_*.js
+/js/libs/*.js
 
 #don't check in map files
 js/**/*.js.map
