@@ -29,7 +29,7 @@ if (rmmvBuildConfig.identifySharedCode) {
     );
 }
 
-const plugins = {
+const webpackConfig = {
     entry: rmmvPluginBundleEntries,
     output: {
         filename: "[name].js",
@@ -47,7 +47,8 @@ const plugins = {
     },
     resolve: {
         extensions: [".ts", ".js"]
-    }
+    },
+    devtool: "source-map"
 };
 
-module.exports = [plugins];
+module.exports = [webpackConfig];

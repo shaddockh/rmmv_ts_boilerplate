@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5"
+        "target": "es5",
+        "noUnusedLocals": true,
+        "sourceMap": true
     },
     "include": ["@typings/**/*.d.ts", "ts/**/*.ts", "test/**/*.ts"]
 }

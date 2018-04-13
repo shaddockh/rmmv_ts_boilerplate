@@ -20,6 +20,7 @@
         "jest": "^21.2.1",
         "ts-jest": "^21.1.3",
         "ts-loader": "^3.0.5",
+        "tslint-config-prettier": "^1.10.0",
         "typescript": "^2.7.2",
         "webpack": "^3.8.1"
     },
@@ -28,19 +29,30 @@
         "coverage": "jest --collectCoverage true",
         "build": "webpack",
         "predist": "npm run build",
-        "dist":
-            "copyfiles js/**/*.* audio/**/*.* data/**/*.* fonts/**/*.* icon/**/*.* img/**/*.* movies/**/*.* Game.rpgproject package.json index.html dist"
+        "dist": "copyfiles js/**/*.* audio/**/*.* data/**/*.* fonts/**/*.* icon/**/*.* img/**/*.* movies/**/*.* Game.rpgproject package.json index.html dist"
     },
     "jest": {
         "transform": {
             "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-        "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json"
+        ],
         "mapCoverage": true,
-        "collectCoverageFrom": ["ts/**/*.ts", "!ts/**/*.d.ts"],
+        "collectCoverageFrom": [
+            "ts/**/*.ts",
+            "!ts/**/*.d.ts"
+        ],
         "coverageDirectory": "<rootDir>/test/_coverageReport",
-        "coverageReporters": ["lcov", "text"]
+        "coverageReporters": [
+            "lcov",
+            "text"
+        ]
     },
     "license": "MIT"
 }
