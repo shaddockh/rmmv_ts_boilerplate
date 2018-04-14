@@ -3,7 +3,8 @@
         "module": "commonjs",
         "target": "es5",
         "noUnusedLocals": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "experimentalDecorators": true
     },
     "include": ["@typings/**/*.d.ts", "ts/**/*.ts", "test/**/*.ts"]
 }

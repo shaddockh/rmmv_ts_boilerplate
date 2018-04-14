@@ -67,7 +67,23 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-// Empty Plugin
+/*:
+ * @plugindesc Sample Template Plugin
+ * @author You
+ *
+ * @param My Parameter
+ * @desc My parameter description
+ * @default True
+ *
+ * @help
+ * This is the help section.
+ */
+(function () {
+    var pluginName = "TemplatePlugin";
+    var parameters = PluginManager.parameters(pluginName);
+    var myParameter = Boolean(parameters["My Parameter"]) || true;
+    console.log(myParameter);
+})();
 
 
 /***/ })
