@@ -1,10 +1,18 @@
 # RPG Maker MV TypeScript Boilerplate Project
 
-This is a project template for new RPG Maker MV projects that want to develop scripts in TypeScript.
+This is a project template for new RPG Maker MV projects that want to develop scripts in TypeScript. It includes some common boilerplate to make getting up and running with a new project easier.
+
+## Features
+
+*   TypeScript compilation configured to code plugins in TypeScript
+*   Includes launch configuration for debugging using the NwJs debugger
+*   Uses webpack to build and bundle plugins
+*   Uses Jest for unit testing and coverage reporting
+*   Uses `decorator-debug` (https://github.com/blakeembrey/decorator-debug) to allow for logging by annotating methods and classes with `@debug`
 
 ## Setup
 
-*   you will need to populate the `\icon`,`\img`,`\fonts`, and `\movies` folders with the default files used when generating a new RPG Maker MV project. These are standard RTP files and are not stored in source control.
+*   you will need to populate the `\icon`,`\img`,`\fonts`, `\js`, and `\movies` folders with the default files used when generating a new RPG Maker MV project. These are standard RTP files and are not stored in source control.
 
 *   run `npm install` from the root of the project to initialize it
 
