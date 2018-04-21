@@ -65,13 +65,20 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+__webpack_require__(1);
 /*:
  * @plugindesc Sample Template Plugin
  * @author You
  *
+ * @param Custom Parameters
+ *
  * @param My Parameter
+ * @parent Custom Parameters
  * @desc My parameter description
  * @default True
  *
@@ -84,6 +91,23 @@
     var myParameter = Boolean(parameters["My Parameter"]) || true;
     console.log(myParameter);
 })();
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// Override the initialize method
+Game_Map.prototype.initialize = (function (_initialize) {
+    return function () {
+        _initialize.call(this);
+        this.displayHelloWorld();
+    };
+})(Game_Map.prototype.initialize);
+Game_Map.prototype.displayHelloWorld();
+{
+    console.log("Hello World");
+}
 
 
 /***/ })

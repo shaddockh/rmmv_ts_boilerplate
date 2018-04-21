@@ -8,7 +8,7 @@ This is a project template for new RPG Maker MV projects that want to develop sc
 *   Includes launch configuration for debugging using the NwJs debugger
 *   Uses webpack to build and bundle plugins
 *   Uses Jest for unit testing and coverage reporting
-*   Uses `decorator-debug` (https://github.com/blakeembrey/decorator-debug) to allow for logging by annotating methods and classes with `@debug`
+*   Uses the Endless Illusion Software RPGMaker MV Typescript definitions from http://endlessillusoft.com/rpgmakermv-intellisene
 
 ## Setup
 
