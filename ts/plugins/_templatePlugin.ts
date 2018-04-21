@@ -1,8 +1,13 @@
+import "./_templatePlugin/Game_Map";
+
 /*:
  * @plugindesc Sample Template Plugin
  * @author You
  *
+ * @param Custom Parameters
+ *
  * @param My Parameter
+ * @parent Custom Parameters
  * @desc My parameter description
  * @default True
  *
